@@ -1,0 +1,42 @@
+﻿@model Feedback_Information.Models.Blog
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Blog</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.blogdescrip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.blogdescrip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.blogentrydate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.blogentrydate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.userid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userid)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.blogid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
